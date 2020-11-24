@@ -1,5 +1,9 @@
 import { container } from 'tsyringe';
 
+// eslint-disable-next-line import/no-unresolved
+import '@modules/users/providers';
+import './providers';
+
 import IAppointmentsRepostitory from '@modules/appointments/repositories/IAppointmentsRepository';
 import AppointmentsRepository from '@modules/appointments/infra/typeorm/repositories/AppointmentRepository';
 
